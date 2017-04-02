@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Dosis');
+
+/*MOBILE*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5;
+    background-color: rgba(7, 190, 205, 0.50);
+    /*    background-color: #fff;*/
+}
+
+
+/*CLEARFIX*/
+
+
+/* new clearfix */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    background-color: rgba(146, 255, 0, 0.05);
+    width: 100%;
+    /*    padding: 1em 0;*/
+}
+
+.banner {
+    background-color: #8bc144;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3em 0;
+    border-bottom: 4px solid #fff;
+}
+
+header video {
+    background: url('../img/nav-bg.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    max-width: 72.5rem;
+    /*    height: 300px;*/
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    display: none;
+    background-color: transparent !important;
+    top: -40px;
+}
+
+nav {
+    top: 0;
+    list-style: none;
+    background-color: #83b93b;
+}
+
+nav h1 {
+    margin: 0;
+    padding: .7em;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+nav ul {
+    background-color: #8bc144;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.handle {
+    width: 100%;
+    background: #212121;
+    border-top: 1px solid #121212;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.handle i {
+    font-size: 1.3em;
+}
+
+main {
+    background-color: #fff;
+    padding: 2em;
+    padding-bottom: 6em;
+}
+
+.hidden {
+    text-indent: -9999px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+p {
+    font-size: 0.618rem;
+}
+
+.mh-image figcaption {
+    color: #fff;
+    padding: 15px;
+    font-size: 2em;
+    padding: 0em;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+main ul {
+    text-align: center;
+    width: 100%;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+main ul li {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    padding: 5px;
+    color: rgba(33, 33, 33, 0.6);
+}
+
+ul li span:before {
+    font-family: FontAwesome;
+    content: '\f171';
+    font-size: 30px;
+}
+
+ul li:nth-child(2) span:before {
+    font-family: FontAwesome;
+    content: '\f1e6';
+    font-size: 30px;
+}
+
+ul li:last-child span:before {
+    font-family: FontAwesome;
+    content: '\f080';
+    font-size: 30px;
+}
+
+ul li span {
+    font-size: 0;
+}
+
+#costColor {
+    color: #83b93b;
+    font-weight: bold;
+}
+
+.mh-image {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+main .box img {
+    float: left;
+    width: 100%;
+    margin-top: 0em
+}
+
+main .box figcaption {
+    float: left;
+    width: 100%;
+    margin-top: 2em;
+}
+
+strong {
+    color: #212121;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+#active {
+    color: #83b93b;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #83b93b;
+    color: #fff;
+    padding: 3em 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 1em 0em 1em 0;
+}
+
+hr {
+    width: 40%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin: .5em auto 1em auto;
+}
+
+footer ul li {
+    padding: 3px;
+    margin: 0 auto;
+    display: inline;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+footer ul li:hover {
+    transition: .3s;
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
+}
+
+footer h1 {
+    font-size: 1.5em;
+    text-align: center;
+    /*    margin: 0 auto;*/
+}
+
+@media screen and (max-width: 35em) {
+    nav ul {
+        max-height: 0px;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        text-align: left;
+    }
+    .handle {
+        display: block;
+    }
+}
+
+
+/*TABLET*/
+
+@media only screen and (min-width:35em) {
+    nav ul li {
+        display: inline-block;
+        padding: 20px;
+    }
+    .handle {
+        width: 100%;
+        background: #121212;
+        text-align: left;
+        box-sizing: border-box;
+        padding: 15px 10px;
+        cursor: pointer;
+        color: #fff;
+        display: none;
+    }
+    nav h1 {
+        padding: 2em;
+        font-size: 3em;
+    }
+    .wrapper {
+        max-width: 60rem;
+    }
+    .banner {
+        background-color: rgba(0, 0, 0, 0.15);
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+    .mh-image figcaption {
+        padding: .5em 0;
+    }
+    .mh-image img {
+        padding: 0;
+    }
+    img {
+        margin-top: 1em;
+        width: 130px;
+    }
+    header {
+        height: 350px;
+    }
+    header video {
+        max-width: 60rem;
+        display: block;
+    }
+    nav ul {
+        text-align: left;
+    }
+    h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    strong {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1rem;
+    }
+    main ul {
+        margin: 0em 0 3em 0;
+    }
+    main .box {
+        clear: both;
+    }
+    main .box img {
+        float: left;
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    main .box figcaption {
+        float: none;
+        /*        background-color: blue;*/
+        /*        width: 45%;*/
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+    footer h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+/*DESKTOP*/
+
+@media only screen and (min-width:60rem) {
+    .wrapper {
+        max-width: 100rem;
+    }
+    header {
+        height: 650px;
+    }
+    header video {
+        max-width: 100rem;
+    }
+    nav h1 {
+        padding: 1em 30px;
+        font-size: 3.5em;
+        text-align: left;
+    }
+    .banner {
+        width: 50%;
+    }
+    img {
+        width: 200px;
+        height: auto;
+    }
+    nav ul li {
+        font-size: 1.3em;
+    }
+    .mh-image figcaption {
+        color: #fff;
+        font-size: 3em;
+        padding: 0em 0;
+        float: left;
+        width: 35%;
+        margin-right: 15%;
+        line-height: 350px;
+    }
+    .mh-image img {
+        color: #fff;
+        padding: 15px;
+        padding: 1em 0;
+        font-family: 'Baloo Bhaina', cursive;
+        float: left;
+        width: 40%;
+        /*        max-width: 280px;*/
+        margin-left: 10%;
+    }
+    h1 {
+        padding: 1em 0 .5em 0;
+        font-size: 2.5em;
+        text-align: left
+    }
+    p {
+        font-size: 1.618rem;
+    }
+    main ul {
+        position: absolute;
+        margin-top: 1.8em;
+    }
+    main ul li span {
+        display: block;
+        float: left;
+        clear: left;
+    }
+    main .box img {
+        float: left;
+        width: 25%;
+        margin-left: 5%;
+    }
+    main .box figcaption {
+        /*        float: left;*/
+        width: 90%;
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    footer h1 {
+        font-size: 3em;
+        margin: 0;
+        padding: 0em 0 0 0;
+    }
+    footer ul li {
+        font-size: 2.5em;
+    }
+}
